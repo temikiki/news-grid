@@ -127,7 +127,8 @@ h1, h2, h3, h4, h5, h6{
 .p-1{padding: 1.5rem  ;}
 .p-2{padding: 2rem ;}
 .p-3{padding: 3rem ;}
-
+.l-heading{
+    font-size:3rem}
 .list li{
     padding: .5rem 0;
     border-bottom: #555 dotted 1px;
@@ -144,6 +145,17 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
     z-index: 2;
 }
+.page-container{
+    display: grid;
+   grid-template-columns: 5fr 2fr;
+   margin: 2rem 0;
+   gap: 1.5rem;
+}
+
+.page-container >*:first-child{
+    grid-row: 1/ span 3;
+}
+
 #main-nav .container{
     display: grid;
     grid-template-columns: 6fr 3fr 2fr;
@@ -236,6 +248,19 @@ h1, h2, h3, h4, h5, h6{
     grid-column-start: 2;
     grid-column-end: 4;
     align-items: center;
+}
+
+#article .meta{
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: #eee; 
+     padding: 0.5rem;
+
+}
+
+#article .meta .category{
+    margin-top: 0.4rem;
 }
 
 #main-footer{
